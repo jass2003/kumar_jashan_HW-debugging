@@ -1,7 +1,9 @@
 # Debugging the DnD puzzle game
 
 
-### To Start I made the puzzle peices in the pussle peices box change respectively to the background imahges when they were changing on clicking on the thumbnails at the bottom.
+### In this puzzle the image droping in the drop zone and making them match is the game and it is working but there are some bugs and features to be added
+
+### To Start I made the puzzle peices in the pussle peices box change respectively to the background images when they were changing on clicking on the thumbnails at the bottom.
 
 
 ### 2nd I gave the reset button a functionality to reset the board when ever there were images in the dropzone.
