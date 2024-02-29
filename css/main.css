@@ -9,11 +9,31 @@ body {
 	color:#FFF;
 	font-family: 'Luckiest Guy', sans-serif;
 	font-size:16px;
+	position: relative;
 }
+ 
+.hide{
+	display: none;
+}
+
 
 #game-boards {
 	width: 100%;
 	text-align: center;
+	
+}
+
+#resetBtn{
+	position: absolute;
+    top: 90px;
+	left: 50px;
+	z-index: 3;
+	font-family: 'Luckiest Guy', sans-serif;
+color: white;
+	background-color: rgb(23, 162, 90);
+	font-size: 35px;	
+	border-radius: 13px;
+	cursor: pointer;
 }
 
 .puzzle-pieces, .puzzle-board {
@@ -61,6 +81,14 @@ body {
   float: left;
 	position: relative;
 }
+
+/* apply this one when all the images are set in a proper orientation. */
+/* .drop-zone2 {
+	width: 49.5%;
+  height: 49.5%;
+  float: left;
+	position: relative;
+} */
 
 .drop-zone img {
 	width: 80% !important;
