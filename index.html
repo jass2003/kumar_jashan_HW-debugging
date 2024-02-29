@@ -6,18 +6,18 @@
 	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
-<body>
-
-
-	<header id="headLine">
-		<h1>drag and drop!</h1>
-		<p>solve the puzzle</p>
+<body> 
+	<button id="resetBtn">Reset</button> 
+ 
+	<header id="headLine"> 
+		<h1>drag and drop!</h1> 	
+		<p>solve the puzzle</p> 
 	</header>
 
 	<section id="game-boards">
 		<!-- these are the draggable pieces -->
 		<div class="puzzle-pieces">
-			<img id="topLeft" draggable src="images/topLeft0.jpg" class="puzzle-image" alt="top left">
+			<img id="topLeft" draggable="true" src="images/topLeft0.jpg" class="puzzle-image" alt="top left">
 			<img id="topRight" draggable src="images/topRight0.jpg" class="puzzle-image" alt="top right">
 			<img id="bottomLeft" draggable src="images/bottomLeft0.jpg" class="puzzle-image" alt="bottom left">
 			<img id="bottomRight" draggable src="images/bottomRight0.jpg" class="puzzle-image" alt="bottom right">
@@ -25,15 +25,22 @@
 
 		<!-- we want to drop the draggable pieces here -->
 		<div class="puzzle-board">
-			<div class="drop-zone tl"></div>
-			<div class="drop-zone tr"></div>
-			<div class="drop-zone bl"></div>
-			<div class="drop-zone br"></div>
-		</div>
-	</section>
+			<div class="drop-zone tl" data-zone="tl"></div>
+			<div class="drop-zone tr" data-zone="tr"></div>
+			<div class="drop-zone bl" data-zone="bl"></div>
+			<div class="drop-zone br" data-zone="br"></div>
+		  </div>
+		  
+		
+	</section> 
+ 
 
+
+
+	
+	
 	<footer>
-		<p>click thumb to change pieces!</p>
+		<p>Select the level!</p>
 		<nav id="buttonHolder">
 			<img src="images/buttonZero.jpg" data-bgref="0" alt="thumbnail">
 			<img src="images/buttonOne.jpg" data-bgref="1" alt="thumbnail">
@@ -41,6 +48,9 @@
 			<img src="images/buttonThree.jpg" data-bgref="3" alt="thumbnail">
 		</nav>
 	</footer>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 
 	<script src="script/main.js"></script>
 </body>
