@@ -24,6 +24,8 @@ event.dataTransfer.setData('draggedEl', this.id);
 
 }
 
+
+
 function allowDragOver(event) {
 event.preventDefault();
 console.log('started draggin over me');
